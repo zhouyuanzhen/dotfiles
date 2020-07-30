@@ -1,0 +1,1 @@
+function docker.status() { docker stats --format "table {{.Name}}\t{{.CPUPerc}}\t{{.MemPerc}}\t{{.NetIO}}\t{{.BlockIO}}"; }
