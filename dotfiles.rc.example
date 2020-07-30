@@ -1,21 +1,23 @@
 # Edit this file to enable/disable shell configurations
 
+DOTFILES_HOME="${HOME}/.dotfiles"
+
 # [Common]:
 
-. alias.rc
-. emacs/emacs.rc
+. ${DOTFILES_HOME}/alias.rc
+. ${DOTFILES_HOME}/emacs/emacs.rc
 
-. macos/keymappings.rc
-. macos/osx-bash.rc
+. ${DOTFILES_HOME}/macos/keymappings.rc
+. ${DOTFILES_HOME}/macos/osx-bash.rc
 
-. git/git.rc
+. ${DOTFILES_HOME}/git/git.rc
 
-. golang/golang.rc
+. ${DOTFILES_HOME}/golang/golang.rc
 
 
 # [ Bash Common Section ]:
-. bash/bash-function.rc
-. bash/docker.rc
+. ${DOTFILES_HOME}/bash/bash-function.rc
+. ${DOTFILES_HOME}/bash/docker.rc
 
 
 # [ Bash Completion Section ]:
@@ -23,9 +25,9 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 	. $(brew --prefix)/etc/bash_completion
 	. $(brew --prefix)/etc/bash_completion.d/git-completion.bash
 
-    [[ -f bash/bash_completion/git-completion.bash ]] && . bash/bash_completion/git-completion.bash
-    [[ -f bash/bash_completion/docker ]] && . bash/bash_completion/docker
-    [[ -f bash/bash_completion/docker-compose ]] && . bash/bash_completion/docker-compose
-    [[ -f bash/bash_completion/vagrant ]] && . bash/bash_completion/vagrant
-    [[ -f bash/bash_completion/qshell ]] && . bash/bash_completion/qshell
+    [[ -f ${DOTFILES_HOME}/bash/bash_completion/git-completion.bash ]] && . ${DOTFILES_HOME}/bash/bash_completion/git-completion.bash
+    [[ -f ${DOTFILES_HOME}/bash/bash_completion/docker ]] && . ${DOTFILES_HOME}/bash/bash_completion/docker
+    [[ -f ${DOTFILES_HOME}/bash/bash_completion/docker-compose ]] && . ${DOTFILES_HOME}/bash/bash_completion/docker-compose
+    [[ -f ${DOTFILES_HOME}/bash/bash_completion/vagrant ]] && . ${DOTFILES_HOME}/bash/bash_completion/vagrant
+    [[ -f ${DOTFILES_HOME}/bash/bash_completion/qshell ]] && . ${DOTFILES_HOME}/bash/bash_completion/qshell
 fi
