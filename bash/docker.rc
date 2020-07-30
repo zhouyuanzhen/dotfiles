@@ -1,1 +1,7 @@
 function docker.status() { docker stats --format "table {{.Name}}\t{{.CPUPerc}}\t{{.MemPerc}}\t{{.NetIO}}\t{{.BlockIO}}"; }
+
+function docker_alpine() { docker run -it --rm --name dev-alpine -v $PWD:/data alpine sh; }
+function docker_centos6() { docker run -it --rm --name dev-centos6 -v $PWD:/data centos:6.10 bash; }
+function docker_centos7() { docker run -it --rm --name dev-centos7 -v $PWD:/data centos:7 bash; }
+function docker_ubuntu1804() { docker run -it --rm --name dev-ubuntu1804 -v $PWD:/data ubuntu:18.04 bash; }
+function docker_ubuntu2004() { docker run -it --rm --name dev-ubuntu2004 -v $PWD:/data ubuntu:20.04 bash; }
