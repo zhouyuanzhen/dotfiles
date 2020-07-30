@@ -1,0 +1,12 @@
+# Settings for Python
+
+# (If system is MacOS):
+if [ "X`uname -s`" == "XDarwin" ]; then
+    export PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
+    export PYTHONDONTWRITEBYTECODE=1
+    export PIPENV_IGNORE_VIRTUALENVS=1
+
+    function oostartconda  { export PATH="/opt/miniconda/bin:$PATH"; conda env list; }
+
+    function oojupyternb() { jupyter notebook;}
+fi
