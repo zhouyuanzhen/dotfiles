@@ -1,0 +1,13 @@
+# git setting for my profile
+
+# echo Setting signing key
+
+# Sign as Joe
+# git config --global user.signingkey 3A5A4A3D
+
+# Autosign
+# git config --global commit.gpgsign true
+# git config --global commit.gpgsign false
+
+# Instaling dependencies for passwordless gpg...
+# brew install gpg-agent # pinentry-mac
