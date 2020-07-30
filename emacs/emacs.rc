@@ -1,0 +1,15 @@
+# Emacs config
+
+# (If system is MacOS):
+if [ "X`uname -s`" == "XDarwin" ]; then
+
+    EMACS_HOME=/Applications/Emacs.app/Contents/MacOS
+
+    # use emacs function to replace
+    function emacs() { ${EMACS_HOME}/Emacs -nw ; }
+    
+    # Open file with emacs GUI app
+    # alias e="${EMACS_HOME}/bin/emacsclient -n"
+    function e() { open -a /Applications/Emacs.app "$@" ; }
+
+fi
