@@ -1,0 +1,7 @@
+# macOS Hack
+
+function socksproxy-set() { networksetup -setsocksfirewallproxy Wi-Fi 127.0.0.1 6081 ;}
+function socksproxy-on()  { networksetup -setsocksfirewallproxystate Wi-Fi on; }
+function socksproxy-off() { networksetup -setsocksfirewallproxystate Wi-Fi off; }
+
+
