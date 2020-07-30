@@ -7,3 +7,9 @@ alias ls='ls -vG'
 # Docker
 # alias docker.status='docker stats $(docker ps --format={{.Names}})'
 # alias docker.status='docker stats --format "table {{.Name}}\t{{.Container}}\t{{.CPUPerc}}\t{{.MemPerc}}\t{{.NetIO}}\t{{.BlockIO}}"'
+
+# alias docker_alpine='docker run -it --rm --name dev-alpine -v $PWD:/data alpine sh'
+# alias docker_centos6='docker run -it --rm --name dev-centos6 -v $PWD:/data centos:6.10 bash'
+# alias docker_centos7='docker run -it --rm --name dev-centos7 -v $PWD:/data centos:7 bash'
+# alias docker_ubuntu1804='docker run -it --rm --name dev-ubuntu1804 -v $PWD:/data ubuntu:18.04 bash'
+# alias docker_ubuntu2004='docker run -it --rm --name dev-ubuntu2004 -v $PWD:/data ubuntu:20.04 bash'
