@@ -1,0 +1,5 @@
+# Alias config
+
+# Common
+# alias la='ls -avGl'
+alias ls='ls -vG'
