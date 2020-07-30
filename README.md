@@ -17,6 +17,12 @@ git clone https://github.com/com:zhouyuanzhen/dotfiles.git ~/.dotfiles
 git clone git@github.com:com:zhouyuanzhen/dotfiles.git ~/.dotfiles
 ```
 
+## macOS
+
+```shell
+. ~/.dotfiles/macos/keymappings.rc
+```
+
 ## Common
 
 ### vim
