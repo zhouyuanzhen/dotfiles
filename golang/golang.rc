@@ -1,0 +1,15 @@
+# Golang GOROOT:
+
+# (From binary package)
+export GOROOT=/usr/local/go
+
+# (From homebrew)
+export GOROOT=/usr/local/opt/go/libexec
+
+
+# Golang GOPATH:
+# export GOPATH=${HOME}/go
+export GOPATH=/opt/go
+
+
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
