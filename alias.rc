@@ -3,3 +3,7 @@
 # Common
 # alias la='ls -avGl'
 alias ls='ls -vG'
+
+# Docker
+# alias docker.status='docker stats $(docker ps --format={{.Names}})'
+alias docker.status='docker stats --format "table {{.Name}}\t{{.Container}}\t{{.CPUPerc}}\t{{.MemPerc}}\t{{.NetIO}}\t{{.BlockIO}}"'
