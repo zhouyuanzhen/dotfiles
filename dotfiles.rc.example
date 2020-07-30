@@ -1,0 +1,31 @@
+# Edit this file to enable/disable shell configurations
+
+# [Common]:
+
+. alias.rc
+. emacs/emacs.rc
+
+. macos/keymappings.rc
+. macos/osx-bash.rc
+
+. git/git.rc
+
+. golang/golang.rc
+
+
+# [ Bash Common Section ]:
+. bash/bash-function.rc
+. bash/docker.rc
+
+
+# [ Bash Completion Section ]:
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+	. $(brew --prefix)/etc/bash_completion
+	. $(brew --prefix)/etc/bash_completion.d/git-completion.bash
+
+    [[ -f bash/bash_completion/git-completion.bash ]] && . bash/bash_completion/git-completion.bash
+    [[ -f bash/bash_completion/docker ]] && . bash/bash_completion/docker
+    [[ -f bash/bash_completion/docker-compose ]] && . bash/bash_completion/docker-compose
+    [[ -f bash/bash_completion/vagrant ]] && . bash/bash_completion/vagrant
+    [[ -f bash/bash_completion/qshell ]] && . bash/bash_completion/qshell
+fi
