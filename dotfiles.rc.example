@@ -13,6 +13,7 @@ DOTFILES_HOME="${HOME}/.dotfiles"
 . ${DOTFILES_HOME}/git/git.rc
 
 . ${DOTFILES_HOME}/golang/golang.rc
+. ${DOTFILES_HOME}/python/python.rc
 
 
 # [ Bash Common Section ]:
