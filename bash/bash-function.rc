@@ -1,4 +1,6 @@
 # Common
+function l() { ls -vGl; }
+
 function echo_red()   { echo -e "\e[31m$@\e[0m"; }
 function echo_green() { echo -e "\e[32m$@\e[0m"; }
 function echo_blue()  { echo -e "\e[34m$@\e[0m"; }
