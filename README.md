@@ -24,3 +24,11 @@ git clone git@github.com:com:zhouyuanzhen/dotfiles.git ~/.dotfiles
 ```shell
 ln -sf ~/.dotfiles/vim/vim.rc ~/.vimrc
 ```
+
+## Development
+
+### Golang
+
+```shell
+. ~/.dotfiles/golang/golang.rc
+```
