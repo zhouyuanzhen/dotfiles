@@ -6,3 +6,7 @@ function socksproxy-off() { networksetup -setsocksfirewallproxystate Wi-Fi off; 
 
 # Shortcut
 function go2icloud() { cd '~/Library/Mobile Documents/com~apple~CloudDocs'; }
+
+
+# Homebrew
+[[ -f /usr/local/etc/profile.d/autojump.sh ]] && . /usr/local/etc/profile.d/autojump.sh
