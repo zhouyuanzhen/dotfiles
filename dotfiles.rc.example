@@ -23,7 +23,7 @@ DOTFILES_HOME="${HOME}/.dotfiles"
 
 # [ Bash Completion Section ]:
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
-	. $(brew --prefix)/etc/bash_completion
+	# . $(brew --prefix)/etc/bash_completion
 	. $(brew --prefix)/etc/bash_completion.d/git-completion.bash
 
     [[ -f ${DOTFILES_HOME}/bash/bash_completion/git-completion.bash ]] && . ${DOTFILES_HOME}/bash/bash_completion/git-completion.bash
