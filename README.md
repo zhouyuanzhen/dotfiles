@@ -1,15 +1,19 @@
 # dotfiles
 
-Yuanzhen' s dotfiles repo.
+Yuanzhen' s dotfiles resources.
 
 ## Quick Start
+
+### clone this repo
 
 ```shell
 git clone git@github.com:zhouyuanzhen/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 ```
 
-Then link the dotfiles to your local HOME directory, for example:
+### linking the dotfiles (on-demand)
+
+Link the dotfiles to your local HOME directory, for example:
 
 ```shell
 ln -sf ~/.dotfiles/.vimrc ~/.vimrc
