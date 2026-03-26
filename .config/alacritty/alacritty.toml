@@ -1,0 +1,53 @@
+# Visit: https://alacritty.org/config-alacritty.html for more.
+
+[terminal.shell]
+program = "/bin/bash"
+args = ["-l"]
+
+[window]
+dimensions = { columns = 128, lines = 36 }
+opacity = 0.8
+blur = true
+
+padding.x = 5
+padding.y = 5
+
+decorations = "Full"
+decorations_theme_variant = "Light" # "Dark"
+
+
+[font]
+size = 12
+
+
+[colors.normal]
+black = "#21222c"
+red = "#ff5555"
+green = "#50fa7b"
+yellow = "#f1fa8c"
+blue = "#bd93f9"
+magenta = "#ff79c6"
+cyan = "#8be9fd"
+white = "#f8f8f2"
+
+[colors.primary]
+background = "#282a36"
+foreground = "#f8f8f2"
+
+[colors.cursor]
+text = "CellBackground"
+cursor = "CellForeground"
+
+[selection]
+save_to_clipboard = true
+
+
+[cursor]
+style.shape = "Underline"
+style.blinking = "Always"
+# shape = "Block" | "Underline" | "Beam"
+# blinking = "Never" | "Off" | "On" | "Always"
+blink_interval = 600
+
+[terminal]
+

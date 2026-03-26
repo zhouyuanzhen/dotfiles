@@ -5,6 +5,18 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="License"></a>
 </p>
 
+## Configuartion Added List
+
+- [ ] zsh
+- [x] vim
+- [x] git
+- [x] Ghostty
+- [x] alacritty
+- [ ] waveterm
+- [ ] zed
+- [x] neofetch
+- [ ] pip
+
 ## Quick Start
 
 ### clone this repo
@@ -27,6 +39,12 @@ ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
 
 # [link the nvim profile]:
 mkdir -p ~/.config/nvim && ln -sf ~/.dotfiles/.config/nvim/init.vim ~/.config/nvim/init.vim
+
+mkdir -p ~/.config/ghostty && ln -sf ~/.dotfiles/.config/ghostty/config ~/.config/ghostty/config
+
+mkdir -p ~/.config/alacritty && ln -sf ~/.dotfiles/.config/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
+
+mkdir -p ~/.config/neofetch && ln -sf ~/.dotfiles/.config/neofetch/config.conf ~/.config/neofetch/config.conf
 ```
 
 ## Reference

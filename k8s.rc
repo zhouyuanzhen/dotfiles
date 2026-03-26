@@ -1,0 +1,5 @@
+#
+# Usage: add following source to your shell profile, e.g. `~/.profile`
+#   source ~/.dotfiles/k8s.rc
+
+alias k="kubectl"
