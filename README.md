@@ -27,6 +27,8 @@ ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
 
 # [link the nvim profile]:
 mkdir -p ~/.config/nvim && ln -sf ~/.dotfiles/.config/nvim/init.vim ~/.config/nvim/init.vim
+
+mkdir -p ~/.config/alacritty && ln -sf ~/.dotfiles/.config/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
 ```
 
 ## Reference
