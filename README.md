@@ -11,7 +11,8 @@
 
 ```shell
 git clone git@github.com:zhouyuanzhen/dotfiles.git ~/.dotfiles
-cd ~/.dotfiles
+# __OR__
+git clone https://github.com/zhouyuanzhen/dotfiles.git
 ```
 
 ### linking the dotfiles (on-demand)
@@ -19,10 +20,11 @@ cd ~/.dotfiles
 Link the dotfiles to your local HOME directory, for example:
 
 ```shell
+# [link the vim profile]:
 ln -sf ~/.dotfiles/.vimrc ~/.vimrc
 
-mkdir -p ~/.config/nvim
-ln -sf ~/dotfiles/.config/nvim/init.vim ~/.config/nvim/init.vim
+# [link the nvim profile]:
+mkdir -p ~/.config/nvim && ln -sf ~/.dotfiles/.config/nvim/init.vim ~/.config/nvim/init.vim
 ```
 
 ## Reference
