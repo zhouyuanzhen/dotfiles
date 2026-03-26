@@ -8,13 +8,13 @@
 ## Configuartion Added List
 
 - [ ] zsh
-- [*] vim
-- [*] git
-- [*] Ghostty
-- [*] alacritty
+- [x] vim
+- [x] git
+- [x] Ghostty
+- [x] alacritty
 - [ ] waveterm
 - [ ] zed
-- [*] neofetch 
+- [x] neofetch 
 
 ## Quick Start
 
@@ -39,7 +39,7 @@ ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
 # [link the nvim profile]:
 mkdir -p ~/.config/nvim && ln -sf ~/.dotfiles/.config/nvim/init.vim ~/.config/nvim/init.vim
 
-mkdir -p ~/.config/neofetch && ln -sf ~/.dotfiles/.config/neofetch/config.conf ~/.config/neofetch/config.conf
+mkdir -p ~/.config/ghostty && ln -sf ~/.dotfiles/.config/ghostty/config ~/.config/ghostty/config
 
 mkdir -p ~/.config/alacritty && ln -sf ~/.dotfiles/.config/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
 
