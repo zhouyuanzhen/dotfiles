@@ -14,7 +14,8 @@
 - [x] alacritty
 - [ ] waveterm
 - [ ] zed
-- [x] neofetch 
+- [x] neofetch
+- [ ] pip
 
 ## Quick Start
 

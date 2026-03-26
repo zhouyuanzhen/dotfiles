@@ -1,0 +1,10 @@
+#
+# Usage: add following source to your shell profile, e.g. `~/.profile`
+#   source ~/.dotfiles/python.rc
+
+alias python=python3
+
+# (设置Python解释器不生成字节码pyc文件)
+export PYTHONDONTWRITEBYTECODE=1
+
+export PIPENV_IGNORE_VIRTUALENVS=1

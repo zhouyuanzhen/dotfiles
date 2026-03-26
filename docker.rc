@@ -1,0 +1,8 @@
+#
+# Usage: add following source to your shell profile, e.g. `~/.profile`
+#   source ~/.dotfiles/docker.rc
+
+## Docker SETTINGS ##
+function docker.status() { 
+    docker stats --format "table {{.Name}}\t{{.CPUPerc}}\t{{.MemPerc}}\t{{.NetIO}}\t{{.BlockIO}}"; 
+}
