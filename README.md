@@ -37,6 +37,8 @@ ln -sf ~/.dotfiles/.vimrc ~/.vimrc
 
 ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
 
+ln -sf ~/.dotfiles/.config/starship/starship.joe.toml ~/.config/starship.toml
+
 # [link the nvim profile]:
 mkdir -p ~/.config/nvim && ln -sf ~/.dotfiles/.config/nvim/init.vim ~/.config/nvim/init.vim
 
