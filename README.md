@@ -23,6 +23,8 @@ Link the dotfiles to your local HOME directory, for example:
 # [link the vim profile]:
 ln -sf ~/.dotfiles/.vimrc ~/.vimrc
 
+ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
+
 # [link the nvim profile]:
 mkdir -p ~/.config/nvim && ln -sf ~/.dotfiles/.config/nvim/init.vim ~/.config/nvim/init.vim
 ```

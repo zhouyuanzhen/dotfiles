@@ -1,0 +1,25 @@
+# IDE
+.idea
+.vscode
+.vagrant
+
+# Terraform
+.terraform
+terraform.tfstate
+terraform.tfstate.backup
+
+# MacOS
+.DS_Store
+
+# gitbook
+_book
+
+# python
+*.pyc
+
+# Ansible
+*.retry
+
+# Other
+*.swp
+nohup.out

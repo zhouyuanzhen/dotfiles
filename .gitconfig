@@ -1,0 +1,55 @@
+[user]
+	name = Yuanzhen Zhou
+	email = szrednick+git@gmail.com
+
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+	ui = auto
+
+[color "branch"]
+	current = green
+	remote = yellow
+
+[core]
+	autocrlf = input
+	editor = vim
+	excludesfile = ~/.dotfiles/gitignore_global.rc
+
+[push]
+	default = simple
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	required = true
+	process = git-lfs filter-process
+
+[url "git@git.dalmait.com:"]
+	insteadOf = https://git.dalmait.com:5811/
+
+#[url "git@github.com:"]
+#    insteadOf = "https://github.com/"
+
+[alias]
+	st = status -sb
+	co = checkout
+	br = branch
+	ci = commit
+	fo = fetch origin
+	logx = log --graph --decorate --pretty=oneline --abbrev-commit -15
+	logxall = log --graph --decorate --pretty=oneline --abbrev-commit
+	log3 = log -3
+	log5 = log -5
+
+[commit]
+	gpgsign = false
+	template = /Users/joe/.stCommitMsg
+
+[init]
+	defaultBranch = main
+
+[safe]
+	directory = *
