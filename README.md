@@ -1,6 +1,4 @@
-# dotfiles
-
-Yuanzhen' s dotfiles resources.
+<h1 align="center">Yuanzhen' s dotfiles resources</h1>
 
 ## Quick Start
 
@@ -23,3 +21,7 @@ ln -sf ~/dotfiles/.config/nvim/init.vim ~/.config/nvim/init.vim
 ```
 
 ## Reference
+
+## 📄 License
+
+MIT License — free to use, modify, and distribute.
