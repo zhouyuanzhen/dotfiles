@@ -47,6 +47,8 @@ mkdir -p ~/.config/ghostty && ln -sf ~/.dotfiles/.config/ghostty/config ~/.confi
 mkdir -p ~/.config/alacritty && ln -sf ~/.dotfiles/.config/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
 
 mkdir -p ~/.config/neofetch && ln -sf ~/.dotfiles/.config/neofetch/config.conf ~/.config/neofetch/config.conf
+
+echo "Link htop config..." && ln -sf ~/.dotfiles/.config/htop ~/.config/htop
 ```
 
 ## Reference
