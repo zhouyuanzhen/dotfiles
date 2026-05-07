@@ -1,7 +1,7 @@
 # Visit: https://alacritty.org/config-alacritty.html for more.
 
 [terminal.shell]
-program = "/bin/bash"
+program = "/opt/homebrew/bin/fish"
 args = ["-l"]
 
 [window]
@@ -15,10 +15,8 @@ padding.y = 5
 decorations = "Full"
 decorations_theme_variant = "Light" # "Dark"
 
-
 [font]
 size = 12
-
 
 [colors.normal]
 black = "#21222c"
@@ -40,7 +38,6 @@ cursor = "CellForeground"
 
 [selection]
 save_to_clipboard = true
-
 
 [cursor]
 style.shape = "Underline"
