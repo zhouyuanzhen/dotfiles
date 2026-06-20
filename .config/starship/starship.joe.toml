@@ -1,7 +1,9 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-$directory\
+$time \
+$character\n\n\
+$os$username@$directory\
 [](fg:color_blue bg:color_aqua)\
 $git_branch\
 $git_status\
@@ -19,12 +21,8 @@ $pixi\
 [](fg:color_bg3 bg:color_bg1)\
 [ ](fg:color_bg1)"""
 
-right_format = """
-$character\
-$os\
-$username\
-$time\
-"""
+#right_format = """
+#"""
 
 palette = 'gruvbox_joe'
 
@@ -69,12 +67,12 @@ Pop = ""
 show_always = true
 style_user = "bg:color_bg1 fg:color_fg0"
 style_root = "bg:color_orange fg:color_fg0"
-format = '[ $user ]($style)'
+format = '[$user]($style)'
 
 [directory]
 style = "fg:color_fg0 bg:color_blue"
 format = "[$path]($style)"
-truncation_length = 12
+truncation_length = 15
 truncation_symbol = "…/"
 
 [directory.substitutions]
