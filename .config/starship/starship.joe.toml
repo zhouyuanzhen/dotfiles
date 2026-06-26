@@ -1,9 +1,8 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-$time \
-$character\n\n\
-$os$username@$directory\
+$time $character\n\
+$username$os$directory\
 [](fg:color_blue bg:color_aqua)\
 $git_branch\
 $git_status\
@@ -18,8 +17,8 @@ $python\
 $docker_context\
 $conda\
 $pixi\
-[](fg:color_bg3 bg:color_bg1)\
-[ ](fg:color_bg1)"""
+[](fg:color_bg3 bg:color_bg1) """
+#[ ](fg:color_bg3)"""
 
 #right_format = """
 #"""
@@ -40,7 +39,7 @@ color_yellow = '#d79921'
 
 [os]
 disabled = false
-style = "bg:color_bg1 fg:color_fg0"
+style = "bg:color_blue fg:color_fg0"
 
 [os.symbols]
 Windows = "󰍲"
@@ -65,7 +64,7 @@ Pop = ""
 
 [username]
 show_always = true
-style_user = "bg:color_bg1 fg:color_fg0"
+style_user = "bg:color_blue fg:color_fg0"
 style_root = "bg:color_orange fg:color_fg0"
 format = '[$user]($style)'
 
@@ -146,7 +145,7 @@ format = '[[$symbol( $version)( $environment) ](fg:color_fg0 bg:color_bg3)]($sty
 
 [time]
 disabled = false
-time_format = "%R"
+time_format = "%Y-%m-%d_%T"
 style = "bg:color_bg1"
 format = '[[$time](fg:color_fg0 bg:color_bg1)]($style)'
 
