@@ -39,7 +39,7 @@
 	br = branch
 	ci = commit
 	fo = fetch origin
-	logx = log --graph --decorate --pretty=oneline --abbrev-commit -15
+	logx = log --graph --decorate --pretty=oneline --abbrev-commit -12
 	logxall = log --graph --decorate --pretty=oneline --abbrev-commit
 	log3 = log -3
 	log5 = log -5
